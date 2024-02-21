@@ -10,8 +10,9 @@ class Property {
   final int bathrooms;
   final int livingrooms;
   final int buildyears;
-  final int qualitify;
+  final double qualitify;
   final List<String> photos;
+  final String category;
 
   const Property({
     required this.mainImage, 
@@ -24,7 +25,8 @@ class Property {
     required this.price,
     required this.bedrooms,
     required this.bathrooms,
-    required this.photos
+    required this.photos,
+    required this.category,
   });
   
 }
