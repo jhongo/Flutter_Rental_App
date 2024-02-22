@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_property_rental_ui/infrastructure/datasource/tabs_datasource.dart';
 
 class CustomNavBar extends StatelessWidget {
   const CustomNavBar({super.key});
@@ -19,8 +20,9 @@ class CustomNavBar extends StatelessWidget {
             ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children:  [
-                Column(
+              children: List.generate(tabs.length, (index){
+                final itemTab = tabs[index];
+                return Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Container(
@@ -31,11 +33,14 @@ class CustomNavBar extends StatelessWidget {
                         borderRadius: BorderRadius.circular(5),
                       )
                     ),
-                    Expanded(child: Icon(Icons.home_filled, size:35, color: Colors.white)),
+                    Expanded(child: Icon(itemTab.icon, size:35, color: Colors.white)),
                    
                   ],
-                ),
-              ])
+                );
+              }
+              
+              ) 
+              )
             ),
         ),
       ),
