@@ -1,3 +1,4 @@
+import 'package:flutter_property_rental_ui/helpers/enums.dart';
 import 'package:flutter_property_rental_ui/infrastructure/models/property.dart';
 
 const property = <Property>[
@@ -22,7 +23,7 @@ const property = <Property>[
       'assets/imgs/houses/house-cook.jpg', 
       'assets/imgs/houses/house-posters.jpg'
     ], 
-    category: 'House'),
+    category: [HouseType.house]),
 
   Property(
     mainImage: 'assets/imgs/houses/house-marco.jpg', 
@@ -40,7 +41,7 @@ const property = <Property>[
       'assets/imgs/houses/house-modern.jpg', 
       'assets/imgs/houses/house-bathdroom_two.jpg'
     ], 
-    category: 'House'),
+    category: [HouseType.house, HouseType.popular ]),
 
   Property(
     mainImage: 'assets/imgs/houses/house-modern.jpg', 
@@ -58,7 +59,11 @@ const property = <Property>[
       'assets/imgs/houses/house-bathdroom_one.jpg', 
       'assets/imgs/houses/house-posters.jpg'
     ], 
-    category: 'House'),
+    category: [HouseType.house ]),
+
+    /**
+     * & Office Models
+     */
 
     Property(
       mainImage: 'assets/imgs/offices/office-name-busness.jpg', 
@@ -75,7 +80,7 @@ const property = <Property>[
         'assets/imgs/offices/office-bano.jpg', 
         'assets/imgs/offices/office-conference.jpg', 
       ], 
-      category: 'Office'),
+      category: [HouseType.office, HouseType.popular]),
 
     Property(
       mainImage: 'assets/imgs/offices/office-name-inter.jpg', 
@@ -93,7 +98,7 @@ const property = <Property>[
         'assets/imgs/offices/office-boss.jpg', 
         'assets/imgs/offices/ofiice-ext.jpg', 
       ], 
-      category: 'Office'),
+      category: [HouseType.office, HouseType.popular]),
 
     Property(
       mainImage: 'assets/imgs/offices/office-name-teamwork.jpg', 
@@ -111,7 +116,11 @@ const property = <Property>[
         'assets/imgs/offices/office-people.jpg', 
         'assets/imgs/offices/office-bano.jpg', 
       ], 
-      category: 'Office'),
+      category: [HouseType.office]),
+
+    /***
+     * & Penthouse Models
+     */
 
     Property(
       mainImage: 'assets/imgs/penthouse/penthouse-name-one.jpg', 
@@ -128,7 +137,7 @@ const property = <Property>[
         'assets/imgs/penthouse/pnthouse-comple_two.jpg',
         'assets/imgs/penthouse/penthouse-comple.jpg',
       ], 
-      category: 'Penthouse'),
+      category: [HouseType.penthouse] ),
     Property(
       mainImage: 'assets/imgs/penthouse/penthouse-name-two.jpg', 
       area: 3200, 
@@ -144,7 +153,7 @@ const property = <Property>[
         'assets/imgs/penthouse/penthouse-comple_four.jpg',
         'assets/imgs/penthouse/pnthouse-comple_two.jpg',
       ], 
-      category: 'Penthouse'),
+      category: [HouseType.penthouse, HouseType.popular] ),
 
     Property(
       mainImage: 'assets/imgs/penthouse/penthouse-name-three.jpg', 
@@ -161,7 +170,14 @@ const property = <Property>[
         'assets/imgs/penthouse/penthouse-name-four.jpg',
         'assets/imgs/penthouse/penthouse-comple_three.jpg',
       ], 
-      category: 'Penthouse'),
+      category: [HouseType.penthouse, HouseType.popular] ),
 
 
 ];
+
+final Map<HouseType, List<Property>> propertyByCategory = {
+  HouseType.house: property.where((property) => property.category.contains(HouseType.house)).toList(),
+  HouseType.office: property.where((property) => property.category.contains(HouseType.office)).toList(),
+  HouseType.penthouse: property.where((property) => property.category.contains(HouseType.penthouse)).toList(),
+  HouseType.popular: property.where((property) => property.category.contains(HouseType.popular)).toList(),
+};

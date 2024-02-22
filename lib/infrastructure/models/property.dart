@@ -1,3 +1,4 @@
+import 'package:flutter_property_rental_ui/helpers/enums.dart';
 
 class Property {
 
@@ -12,7 +13,7 @@ class Property {
   final int buildyears;
   final double qualitify;
   final List<String> photos;
-  final String category;
+  final List<HouseType> category;
 
   const Property({
     required this.mainImage, 
