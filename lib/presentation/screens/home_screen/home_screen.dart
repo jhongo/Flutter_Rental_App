@@ -15,6 +15,7 @@ class HomeScreen extends StatelessWidget {
           HeaderHome(),
           SizedBox(height: 30),
           SearchAndTitle(),
+          SizedBox(height: 30),
           BodyHome()
           // BodyHome(),
           // FooterHome(),

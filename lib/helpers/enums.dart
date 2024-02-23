@@ -1,5 +1,5 @@
 
-enum HouseType {house, office, penthouse, popular}
+enum HouseType {popular, house, office, penthouse}
 
 extension EnumExtension on HouseType {
   String capitalizeName(){
