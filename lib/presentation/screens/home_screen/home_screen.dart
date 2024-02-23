@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_property_rental_ui/presentation/screens/home_screen/widgets/body_home.dart';
 import 'package:flutter_property_rental_ui/presentation/screens/home_screen/widgets/header_home.dart';
 import 'package:flutter_property_rental_ui/presentation/screens/home_screen/widgets/search_and_title.dart';
 
@@ -14,6 +15,7 @@ class HomeScreen extends StatelessWidget {
           HeaderHome(),
           SizedBox(height: 30),
           SearchAndTitle(),
+          BodyHome()
           // BodyHome(),
           // FooterHome(),
         ],

@@ -8,7 +8,10 @@ class MainScreen extends ConsumerWidget {
   // const MainScreen({super.key});
 
   final screens = <Widget>[
-    HomeScreen()
+    const HomeScreen(),
+    const ExploreScreen(),
+    const FavoriteScreen(),
+    const MessagesScreen(),
   ];
 
 
