@@ -1,5 +1,6 @@
 
-enum HouseType {popular, house, office, penthouse}
+// ignore: constant_identifier_names
+enum HouseType {Popular, House, Office, Penthouse}
 
 extension EnumExtension on HouseType {
   String capitalizeName(){

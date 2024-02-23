@@ -3,4 +3,4 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 final stateItemNav = StateProvider<int>((ref) => 0);
 
-final stateItemFilter = StateProvider<String>((ref) =>  HouseType.popular.capitalizeName());
+final stateItemFilter = StateProvider<HouseType>((ref) =>  HouseType.Popular);

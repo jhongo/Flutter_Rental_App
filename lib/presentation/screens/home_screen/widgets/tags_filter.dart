@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_property_rental_ui/helpers/enums.dart';
 import 'package:flutter_property_rental_ui/presentation/services/tabs_services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 
 class TagFilter extends ConsumerWidget {
 
-  final String name;
+  final HouseType name;
   final Function onTap;
   const TagFilter({super.key, required this.name, required this.onTap});
 
@@ -33,7 +34,7 @@ class TagFilter extends ConsumerWidget {
             child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(
-                name,
+                '${name.toString().split('.').last}',
                 style: TextStyle(
                   color: filterSelect == name ? Colors.white : Colors.black,
                   fontSize: 16,
