@@ -23,7 +23,9 @@ const property = <Property>[
       'assets/imgs/houses/house-cook.jpg', 
       'assets/imgs/houses/house-posters.jpg'
     ], 
-    category: [HouseType.House]),
+    category: [HouseType.House],
+    model: 'Modern Two'
+    ),
 
   Property(
     mainImage: 'assets/imgs/houses/house-marco.jpg', 
@@ -41,6 +43,7 @@ const property = <Property>[
       'assets/imgs/houses/house-modern.jpg', 
       'assets/imgs/houses/house-bathdroom_two.jpg'
     ], 
+    model: 'Modern Two',
     category: [HouseType.House, HouseType.Popular ]),
 
   Property(
@@ -50,7 +53,8 @@ const property = <Property>[
     buildyears: 7, 
     qualitify: 4.4, 
     name: 'Marco House', 
-    address: 'Philadephia, New York', 
+    address: 'Philadephia, New York',
+
     price: 5.000, 
     bedrooms: 2, 
     bathrooms: 1, 
@@ -59,6 +63,7 @@ const property = <Property>[
       'assets/imgs/houses/house-bathdroom_one.jpg', 
       'assets/imgs/houses/house-posters.jpg'
     ], 
+    model: 'Modern Two',
     category: [HouseType.House ]),
 
     /**
@@ -80,6 +85,7 @@ const property = <Property>[
         'assets/imgs/offices/office-bano.jpg', 
         'assets/imgs/offices/office-conference.jpg', 
       ], 
+    model: 'Modern Family',
       category: [HouseType.Office, HouseType.Popular]),
 
     Property(
@@ -98,6 +104,7 @@ const property = <Property>[
         'assets/imgs/offices/office-boss.jpg', 
         'assets/imgs/offices/ofiice-ext.jpg', 
       ], 
+      model: 'Model City',
       category: [HouseType.Office, HouseType.Popular]),
 
     Property(
@@ -116,6 +123,7 @@ const property = <Property>[
         'assets/imgs/offices/office-people.jpg', 
         'assets/imgs/offices/office-bano.jpg', 
       ], 
+      model: 'Model Family',
       category: [HouseType.Office]),
 
     /***
@@ -137,6 +145,7 @@ const property = <Property>[
         'assets/imgs/penthouse/pnthouse-comple_two.jpg',
         'assets/imgs/penthouse/penthouse-comple.jpg',
       ], 
+      model: 'Model Style',
       category: [HouseType.Penthouse] ),
     Property(
       mainImage: 'assets/imgs/penthouse/penthouse-name-two.jpg', 
@@ -153,6 +162,7 @@ const property = <Property>[
         'assets/imgs/penthouse/penthouse-comple_four.jpg',
         'assets/imgs/penthouse/pnthouse-comple_two.jpg',
       ], 
+      model: 'Model Vergel',
       category: [HouseType.Penthouse, HouseType.Popular] ),
 
     Property(
@@ -170,6 +180,7 @@ const property = <Property>[
         'assets/imgs/penthouse/penthouse-name-four.jpg',
         'assets/imgs/penthouse/penthouse-comple_three.jpg',
       ], 
+      model: 'Model Two',
       category: [HouseType.Penthouse, HouseType.Popular] ),
 
 

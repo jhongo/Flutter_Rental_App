@@ -14,8 +14,9 @@ class Property {
   final double qualitify;
   final List<String> photos;
   final List<HouseType> category;
+  final String model;
 
-  const Property({
+  const Property( {
     required this.mainImage, 
     required this.area, 
     required this.livingrooms, 
@@ -28,6 +29,7 @@ class Property {
     required this.bathrooms,
     required this.photos,
     required this.category,
+    required this.model,
   });
   
 }
