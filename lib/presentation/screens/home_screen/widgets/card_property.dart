@@ -17,7 +17,6 @@ class CardProperty extends StatelessWidget {
           width: 250,
           child: DecoratedBox(
             decoration: BoxDecoration(
-              color: Colors.indigo,
               borderRadius: BorderRadius.circular(40)),
           child: Stack(
             children: [
@@ -32,7 +31,11 @@ class CardProperty extends StatelessWidget {
                   height: MediaQuery.of(context).size.height * 0.09,
                   child: DecoratedBox(
                     decoration: const BoxDecoration(
-                      color: Colors.indigo,
+                      gradient: LinearGradient(
+                        begin: Alignment.bottomCenter,
+                        end: Alignment.topCenter,
+                        colors: [Colors.black54, Colors.transparent],
+                        )
                     ),
                     child: Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 20),
@@ -66,10 +69,11 @@ class CardProperty extends StatelessWidget {
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text(property.name, style: TextStyle(fontSize: 20,color: Colors.white, fontWeight: FontWeight.bold), maxLines: 1,overflow: TextOverflow.ellipsis, ),
+                                    Text(property.name, style: const TextStyle(fontSize: 20,color: Colors.white, fontWeight: FontWeight.bold), maxLines: 1,overflow: TextOverflow.ellipsis, ),
                                     Row(
                                       children: [
-                                        Icon(Icons.other_houses_outlined, color: Colors.white, size: 16,),
+                                        const Icon(Icons.other_houses_outlined, color: Colors.white, size: 16,),
+                                        const SizedBox(width: 5,),
                                         Text(property.model, style: const TextStyle(color: Colors.white))
                                       ],
                                     )
@@ -77,7 +81,7 @@ class CardProperty extends StatelessWidget {
                                 ),
                               ),
                               IconButton(onPressed:(){}, 
-                              icon: FaIcon(FontAwesomeIcons.heart, color: Colors.white, size: 20)
+                              icon: const FaIcon(FontAwesomeIcons.heart, color: Colors.white, size: 20)
                               )
                             ],
                           )

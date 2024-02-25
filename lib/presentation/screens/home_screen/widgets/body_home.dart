@@ -26,7 +26,7 @@ class BodyHome extends ConsumerWidget {
               );})),
           SizedBox(height: 30),
           SizedBox(
-            height: 225,
+            height: 250,
             width: MediaQuery.of(context).size.width,
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
