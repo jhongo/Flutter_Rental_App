@@ -66,6 +66,7 @@ flutter:
     - assets/imgs/houses/
     - assets/imgs/offices/
     - assets/imgs/penthouse/
+    - assets/imgs/nearby/
     - assets/gifs/
   #   - images/a_dot_ham.jpeg
 

@@ -6,11 +6,11 @@ class TitleWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Align(
+    return const Align(
       alignment: Alignment.centerLeft,
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-        child: const SizedBox(
+        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+        child: SizedBox(
           child: Text('Property Nearby', style: TextStyle( fontSize: 25, fontWeight: FontWeight.bold ), ),
         ),
       ),
