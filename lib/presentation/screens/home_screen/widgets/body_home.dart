@@ -24,9 +24,9 @@ class BodyHome extends ConsumerWidget {
                 onTap: () => ref.read(stateItemFilter.notifier).state = HouseType.values[index]
                 // houseType: HouseType.values[index],
               );})),
-          const SizedBox(height: 30),
+          const SizedBox(height: 25),
           SizedBox(
-            height: 250,
+            height: 240,
             width: MediaQuery.of(context).size.width,
             child: ListView.builder(
               scrollDirection: Axis.horizontal,

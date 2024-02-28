@@ -13,7 +13,7 @@ class CardProperty extends StatelessWidget {
       child: ClipRRect(
         borderRadius: BorderRadius.circular(30),
         child: SizedBox(
-          width: 250,
+          width: 240,
           child: DecoratedBox(
               decoration:
                   BoxDecoration(borderRadius: BorderRadius.circular(40)),
