@@ -11,7 +11,7 @@ class TitleWidget extends StatelessWidget {
       child: Padding(
         padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
         child: SizedBox(
-          child: Text('Property Nearby', style: TextStyle( fontSize: 25, fontWeight: FontWeight.bold ), ),
+          child: Text('Property Nearby', style: TextStyle( fontSize: 22, fontWeight: FontWeight.bold ), ),
         ),
       ),
     );

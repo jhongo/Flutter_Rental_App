@@ -16,7 +16,7 @@ class ListNearby extends StatelessWidget {
           itemBuilder:(context, index) {
             final nearbyItem = nearby[index];
             return  Padding(
-              padding:const EdgeInsets.fromLTRB(20, 0, 20, 25),
+              padding:const EdgeInsets.fromLTRB(20, 10, 20, 30),
               child: SizedBox(
                 width: 270,
                 // height: 50,
