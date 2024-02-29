@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_property_rental_ui/helpers/enums.dart';
 import 'package:flutter_property_rental_ui/helpers/router_redirect.dart';
 import 'package:flutter_property_rental_ui/infrastructure/datasource/property_datasourse.dart';
-import 'package:flutter_property_rental_ui/presentation/details/details_screen.dart';
 import 'package:flutter_property_rental_ui/presentation/screens/home_screen/widgets/card_property.dart';
 import 'package:flutter_property_rental_ui/presentation/screens/home_screen/widgets/tags_filter.dart';
 import 'package:flutter_property_rental_ui/presentation/services/tabs_services.dart';
