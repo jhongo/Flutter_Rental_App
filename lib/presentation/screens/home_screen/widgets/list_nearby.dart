@@ -17,17 +17,22 @@ class ListNearby extends StatelessWidget {
             scrollDirection: Axis.horizontal,
             itemCount: nearby.length,
             itemBuilder:(context, index) {
-              return const Padding(
-                padding: EdgeInsets.symmetric(horizontal: 20),
+              return  Padding(
+                padding:const EdgeInsets.fromLTRB(20, 0, 20, 25),
                 child: SizedBox(
-                  width: 200,
-                  height: 50,
+                  width: 270,
+                  // height: 50,
                   child: DecoratedBox(
                     decoration: BoxDecoration(
-                      color: Colors.black
-                    )
-              
+                      borderRadius: BorderRadius.circular(20),
+                      color: Colors.black,
                     ),
+                    child: Row(
+                      children: [
+                        
+                      ],
+                    ),
+                  ),
                 ),
               );
             }),
