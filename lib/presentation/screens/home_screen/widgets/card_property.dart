@@ -3,6 +3,9 @@ import 'package:flutter_property_rental_ui/infrastructure/models/property.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class CardProperty extends StatelessWidget {
+  
+  
+
   final Property property;
   const CardProperty({super.key, required this.property});
 
