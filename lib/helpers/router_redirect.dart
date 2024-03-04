@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_property_rental_ui/infrastructure/models/property.dart';
-import 'package:flutter_property_rental_ui/presentation/details/details_screen.dart';
+import 'package:flutter_property_rental_ui/presentation/screens/details/details_screen.dart';
 
 
 class Redirect{
