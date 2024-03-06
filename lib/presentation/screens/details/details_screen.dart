@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_property_rental_ui/infrastructure/models/property.dart';
 import 'package:flutter_property_rental_ui/presentation/screens/details/widgets/imagen_main.dart';
+import 'package:flutter_property_rental_ui/presentation/screens/details/widgets/title_property.dart';
 
 class DetailsScreen extends StatelessWidget {
 
@@ -21,6 +22,11 @@ class DetailsScreen extends StatelessWidget {
               ImagenMain(
                 urlImage: property.mainImage,
                 price: property.price,
+              ),
+              TitleProperty(
+                name: property.model,
+                location: property.address,
+                qualitify: property.qualitify
               )
             ],
           ),
