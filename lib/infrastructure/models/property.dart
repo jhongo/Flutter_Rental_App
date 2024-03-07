@@ -8,6 +8,7 @@ class Property {
   final double price;
   final int area;
   final int bedrooms;
+  final int cars;
   final int bathrooms;
   final int livingrooms;
   final int buildyears;
@@ -26,6 +27,7 @@ class Property {
     required this.address,
     required this.price,
     required this.bedrooms,
+    required this.cars,
     required this.bathrooms,
     required this.photos,
     required this.category,

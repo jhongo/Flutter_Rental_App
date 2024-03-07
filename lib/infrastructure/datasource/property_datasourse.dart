@@ -17,6 +17,7 @@ const property = <Property>[
     address: 'Green Street, New York', 
     price: 13.000, 
     bedrooms: 3, 
+    cars: 2,
     bathrooms: 2, 
     photos: [
       'assets/imgs/houses/house-bathdroom_one.jpg', 
@@ -37,6 +38,7 @@ const property = <Property>[
     address: 'Fifth Avenue, New York', 
     price: 5.000, 
     bedrooms: 2, 
+    cars: 2,
     bathrooms: 1, 
     photos: [
       'assets/imgs/houses/house-cook.jpg', 
@@ -57,6 +59,7 @@ const property = <Property>[
 
     price: 5.000, 
     bedrooms: 2, 
+    cars: 2,
     bathrooms: 1, 
     photos: [
       'assets/imgs/houses/house-exterior.jpg', 
@@ -80,6 +83,7 @@ const property = <Property>[
       address: 'New Jersey, New York', 
       price: 15.000, 
       bedrooms: 4, 
+      cars: 2,
       bathrooms: 5, 
       photos: [
         'assets/imgs/offices/office-bano.jpg', 
@@ -98,6 +102,7 @@ const property = <Property>[
       address: 'San Francisco, New York', 
       price: 20.000, 
       bedrooms: 6, 
+      cars: 2,
       bathrooms: 10, 
       photos: [
         'assets/imgs/offices/office-sala.jpg', 
@@ -117,6 +122,7 @@ const property = <Property>[
       address: 'San Lorenzo, Atlanta', 
       price: 16.000, 
       bedrooms: 7, 
+      cars: 2,
       bathrooms: 6, 
       photos: [
         'assets/imgs/offices/office-space-work.jpg', 
@@ -140,6 +146,7 @@ const property = <Property>[
       address: 'Lazer Street, New York', 
       price: 23.000, 
       bedrooms: 3, 
+      cars: 2,
       bathrooms: 2, 
       photos: [
         'assets/imgs/penthouse/pnthouse-comple_two.jpg',
@@ -157,6 +164,7 @@ const property = <Property>[
       address: 'Beverly Hills, New York', 
       price: 30.000, 
       bedrooms: 4, 
+      cars: 2,
       bathrooms: 3, 
       photos: [
         'assets/imgs/penthouse/penthouse-comple_four.jpg',
@@ -175,6 +183,7 @@ const property = <Property>[
       address: 'Osas, New York', 
       price: 28.000, 
       bedrooms: 6, 
+      cars: 2,
       bathrooms: 3, 
       photos: [
         'assets/imgs/penthouse/penthouse-name-four.jpg',
