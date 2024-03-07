@@ -22,6 +22,7 @@ const property = <Property>[
     photos: [
       'assets/imgs/houses/house-bathdroom_one.jpg', 
       'assets/imgs/houses/house-cook.jpg', 
+       'assets/imgs/houses/house-marco.jpg',
       'assets/imgs/houses/house-posters.jpg'
     ], 
     category: [HouseType.House],
@@ -42,6 +43,7 @@ const property = <Property>[
     bathrooms: 1, 
     photos: [
       'assets/imgs/houses/house-cook.jpg', 
+      'assets/imgs/offices/office-name-busness.jpg',
       'assets/imgs/houses/house-modern.jpg', 
       'assets/imgs/houses/house-bathdroom_two.jpg'
     ], 
@@ -64,7 +66,8 @@ const property = <Property>[
     photos: [
       'assets/imgs/houses/house-exterior.jpg', 
       'assets/imgs/houses/house-bathdroom_one.jpg', 
-      'assets/imgs/houses/house-posters.jpg'
+      'assets/imgs/houses/house-posters.jpg',
+      'assets/imgs/offices/office-name-busness.jpg'
     ], 
     model: 'Modern Two',
     category: [HouseType.House ]),
@@ -88,6 +91,8 @@ const property = <Property>[
       photos: [
         'assets/imgs/offices/office-bano.jpg', 
         'assets/imgs/offices/office-conference.jpg', 
+        'assets/imgs/offices/office-boss.jpg',
+        'assets/imgs/offices/office-name-busness.jpg'
       ], 
     model: 'Modern Family',
       category: [HouseType.Office, HouseType.Popular]),
@@ -107,6 +112,7 @@ const property = <Property>[
       photos: [
         'assets/imgs/offices/office-sala.jpg', 
         'assets/imgs/offices/office-boss.jpg', 
+         'assets/imgs/offices/office-name-teamwork.jpg',
         'assets/imgs/offices/ofiice-ext.jpg', 
       ], 
       model: 'Model City',
@@ -128,6 +134,7 @@ const property = <Property>[
         'assets/imgs/offices/office-space-work.jpg', 
         'assets/imgs/offices/office-people.jpg', 
         'assets/imgs/offices/office-bano.jpg', 
+        'assets/imgs/offices/office-space-work.jpg', 
       ], 
       model: 'Model Family',
       category: [HouseType.Office]),
@@ -151,6 +158,8 @@ const property = <Property>[
       photos: [
         'assets/imgs/penthouse/pnthouse-comple_two.jpg',
         'assets/imgs/penthouse/penthouse-comple.jpg',
+        'assets/imgs/penthouse/penthouse-name-one.jpg',
+        'assets/imgs/penthouse/penthouse-comple.jpg',
       ], 
       model: 'Model Style',
       category: [HouseType.Penthouse] ),
@@ -169,6 +178,7 @@ const property = <Property>[
       photos: [
         'assets/imgs/penthouse/penthouse-comple_four.jpg',
         'assets/imgs/penthouse/pnthouse-comple_two.jpg',
+        'assets/imgs/penthouse/penthouse-comple.jpg',
       ], 
       model: 'Model Vergel',
       category: [HouseType.Penthouse, HouseType.Popular] ),
@@ -188,6 +198,8 @@ const property = <Property>[
       photos: [
         'assets/imgs/penthouse/penthouse-name-four.jpg',
         'assets/imgs/penthouse/penthouse-comple_three.jpg',
+        'assets/imgs/penthouse/penthouse-name-four.jpg',
+        'assets/imgs/penthouse/penthouse-name-three.jpg'
       ], 
       model: 'Model Two',
       category: [HouseType.Penthouse, HouseType.Popular] ),
