@@ -35,6 +35,10 @@ class ImagenMain extends StatelessWidget {
                   ),
                 )
               ),
+              IconButton(onPressed:(){
+                Navigator.pop(context);
+              }, 
+              icon:Icon(Icons.arrow_back_ios, color: Colors.white,)),
               Padding(
                 padding: const EdgeInsets.fromLTRB(20, 0, 20, 15),
                 child: Row(

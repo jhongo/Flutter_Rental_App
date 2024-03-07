@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_property_rental_ui/infrastructure/models/property.dart';
+import 'package:flutter_property_rental_ui/presentation/screens/details/widgets/attributes_property.dart';
 import 'package:flutter_property_rental_ui/presentation/screens/details/widgets/imagen_main.dart';
 import 'package:flutter_property_rental_ui/presentation/screens/details/widgets/list_images.dart';
 import 'package:flutter_property_rental_ui/presentation/screens/details/widgets/title_property.dart';
@@ -29,7 +30,15 @@ class DetailsScreen extends StatelessWidget {
                 location: property.address,
                 qualitify: property.qualitify
               ),
-              ListImages(images: property.photos)
+              ListImages(images: property.photos),
+              AttributesProperty(
+                area: property.area,
+                bedrooms: property.bedrooms,
+                bathrooms: property.bathrooms,
+                builtInYear: property.buildyears,
+                livingRoom: property.livingrooms,
+                parking: property.cars,
+              )
             ],
           ),
         ),

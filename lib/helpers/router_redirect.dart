@@ -8,8 +8,14 @@ class Redirect{
   static redirect(BuildContext context, Property property) async {
     await Navigator.of(context).push(
       PageRouteBuilder(
+        transitionDuration: const Duration(milliseconds: 500),
         pageBuilder: (context, animation, secondaryAnimation){
-          return DetailsScreen(property: property);
+          return SlideTransition(
+            position: Tween<Offset>(
+              begin: const Offset(0, 1),
+              end: Offset.zero
+            ).animate(animation),
+            child: DetailsScreen(property: property));
         })
     );
 }
